@@ -1,0 +1,9 @@
+<form>
+  <h3>Customer</h3>
+  <shared-ui-text label="First Name" [control]="form.firstName"></shared-ui-text>
+  <shared-ui-text label="Last Name" [control]="form.lastName"></shared-ui-text>
+  <address [form]="form.Address"></address>
+  <h4>Orders</h4>
+  <order *ngFor="let order of form.Orders" [form]="order"></order>
+  <button type="button" (click)="submit()">Submit</button>
+</form>
