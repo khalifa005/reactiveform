@@ -515,5 +515,7 @@ export class CustomerForm extends FormGroup {
 
 One very common form scenario is the need to conditionally add or remove controls based upon the value or validity of another part of the form. We are able to do this by adding two methods and a handler to the form. The addEmail() method handles the responsibility of adding the email FormControl to the form and the forms typed reference to this.email. removeEmail() in a similar fashion removes the email control from the form and sets this.form to null. Finally, the private handler() method takes the responsibility of listening to the valueChanges of the address state control and then calling either addEmail() or removeEmail() based upon that value. The important thing to note is that this complexity is the responsibility of the Form itself; completely de-coupling this logic from the component and template.
 
+check the code in the repo you will find more usecases 
+
 # Conclusion
 In this deep dive of Angular Reactive Forms we covered a lot of material! Here is a quick summary of everything we covered: - What are Angular Reactive Forms and Template-Driven Forms. - What are FormControl, FormGroup, and FormArray - How to create custom Angular Form Validations - How to create powerful reusable form validation components in Angular - How to use FormBuilder - How to create Nested Forms - How To Handle Advanced Form Scenarios
